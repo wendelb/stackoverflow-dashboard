@@ -1,0 +1,9 @@
+﻿<div class="box">
+    <div class="heading">StackOverflow questions and weather data!</div>
+    <ul class="content">
+        <li *ngFor="let item of soquestions" [ngClass]="{'item-weather': item.type == 'weather', 'item-question': item.type == 'question', 'item': true}">
+            <span *ngIf="item.type == 'weather'">Weather for {{item.weather.Datum}} - {{item.weather.Zeit}}: {{item.weather.Temp}}°C - {{item.weather.Feuchte}}%</span>
+            <span *ngIf="item.type == 'question'" [ngClass]="{'is-answered': item.question.is_answered}">{{item.question.title}}</span>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,6 @@
+﻿<div class="box">
+    <div class="heading">StackOverflow questions for <i>{{tag}}</i>!</div>
+    <ul class="content">
+        <li *ngFor="let question of soquestions" [ngClass]="{'item-answered': question.is_answered, 'item': true}">{{question.title}}</li>
+    </ul>
+</div>

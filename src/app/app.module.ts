@@ -10,21 +10,28 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import {LayoutModule} from "./core/layout/layout.module";
 import { SearchComponent } from './search/search.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent,
-    SearchComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
+// Own modules
+import {StackexchangeComponent} from "./dashboard/stackexchange-box/stackexchange.component";
+import {WeatherComponent} from "./dashboard/weather-box/weather.component";
 
-    LayoutModule,
-    AppRoutingModule
-  ],
-  providers: [SearchService],
-  bootstrap: [AppComponent]
+@NgModule({
+    declarations: [
+        AppComponent,
+        DashboardComponent,
+        SearchComponent,
+
+        StackexchangeComponent,
+        WeatherComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        HttpModule,
+
+        LayoutModule,
+        AppRoutingModule
+    ],
+    providers: [SearchService],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

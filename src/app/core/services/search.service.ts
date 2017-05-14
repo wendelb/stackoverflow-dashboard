@@ -30,11 +30,17 @@ export class SearchService {
         return this.http.get(SearchService.apiUrl + keyword)
             .map((res: Response) => {
                 let data = res.json();
-                console.log("API USAGE: " + data.quota_remaining + " of " + data.quota_max + " requests available" );
+                console.log("API USAGE: " + data.quota_remaining + " of " + data.quota_max + " requests available");
                 return data;
             })
             .catch((err: Response) => Observable.of(err.json()));
     }
 
-
+    getWeather(): Observable<JSON> {
+        return this.http.get('/assets/data/weatherdata.json')
+            .map((res: Response) => {
+                return res.json();
+            })
+            .catch((err: Response) => Observable.of(err.json()));
+    }
 }

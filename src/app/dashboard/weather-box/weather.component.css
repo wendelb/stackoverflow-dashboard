@@ -1,0 +1,36 @@
+﻿.box {
+    display: block;
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+    .box .heading {
+        height: 35px;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 6px;
+    }
+
+    .box .item {
+        margin-bottom: 5px;
+    }
+
+        .box .item.item-weather {
+            list-style-image: url("/assets/images/weather.png");
+        }
+
+        .box .item.item-question {
+            list-style-image: url("/assets/images/question.png");
+        }
+
+            .box .item.item-question span {
+                color: red;
+            }
+
+                .box .item.item-question span.is-answered {
+                    color: green;
+                }

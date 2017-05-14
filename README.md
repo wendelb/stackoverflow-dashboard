@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
+## Icons
+* The Question Icon is from https://www.iconfinder.com/icons/372890/faq_full_question_round_icon
+* The Weather Icon is from https://www.iconfinder.com/icons/274769/cloudy_forecast_partly_cloudy_weather_icon
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
